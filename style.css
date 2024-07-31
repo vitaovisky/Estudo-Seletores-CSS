@@ -1,0 +1,62 @@
+* {
+  font-size: 20px;
+  color: darkslateblue;
+}
+
+p strong {
+  color: darkslateblue;
+}
+
+li p {
+  color: black;
+}
+
+p {
+  font-size: 16px;
+  color: darkslategray;
+}
+
+#p-id {
+  color: darkred;
+}
+
+.p-class {
+  color: darkgreen;
+}
+
+[title] {
+  color: aqua;
+}
+
+[title="Item-lista"] {
+  color: blueviolet;
+}
+
+[title~="Parcial"] {
+  color: brown;
+}
+
+[title|="Pipe"] {
+  color: chartreuse;
+}
+
+[title^="PrefixoPode://"]
+{
+  color: coral;
+}
+
+[title$="#isuaSufixo"] {
+  color: darkseagreen;
+}
+
+[title*="Asterisco"] {
+  color: fuchsia;
+}
+
+.seletor-atributo {
+  font-weight: bold;
+}
+
+ul li:nth-child(odd) {
+  background-color: rgb(226, 226, 226);
+}

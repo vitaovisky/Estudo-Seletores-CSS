@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo Seletores CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Seletores CSS</h1>
+    <h2>O CSS possui 4 tipos de seletores</h2>
+    <ol>
+        <li>
+            <p>Seletor por tag</p>
+        </li>
+        <li>
+            <p>Seletor por Classe</p>
+        </li>
+        <li>
+            <p>Seletor por Id</p>
+        </li>
+        <li>
+            <p>Seletor Universal</p>
+        </li>
+        <li>
+            <p>Seletor por atributo</p>
+        </li>
+    </ol>
+    <h2>Seletores por Tag:</h2>
+    <p>É necessário declarar na arquivo CSS a tag que deseja estilizar.
+        Essa seleção irá alterar todas as tags similares.<br>
+        Tem menor peso entre os estilos. No exemplo foi selecionada a tag <span>
+            < </span>p > e foi adicionada a cor darklategray a ela.
+    </p>
+    <h2>Seletor por Classe</h2>
+    <p class="p-class">É necessário declarar a classe na tag, utilizando class="nome-da-classe". E no arquivo CSS a classe é estilizada declarando .nome-da-classe</p>
+    <p class="p-class">Possui maior peso no estilo do que a declaração pela tag.
+    </p>
+    <h4 class="p-class">
+        A classe pode ser repetida em diversas tags, para a estilização de várias tags simultaneamente.
+    </h4>
+    <h2>Seletor por Id</h2>
+    <p id="p-id" class="p-class">É necessário declarar a Id na tag, utilizando id="nome-do-identificador". <br>
+        E no arquivo CSS o Identificador é estilizado declarando #nome-do-identificador.
+        <br>
+        Possui maior peso no estilo do que a declaração pela tag e pela classe.
+        <br>
+        O Id pode ser declarado somente em uma tag, não deve ser repetido no arquivo HTML.
+        <br>
+        Mesmo que uma mesma tag tenha Id e classe, a estilização do Id terá maior peso que a da classe. Independente da posição de ambos no arquivo CSS.
+    </p>
+    <h2>Seletor Universal</h2>
+    <p>Declarado no arquivo CSS como *</p>
+    <p>Ira estilizar todas as tags da página. Normalmente será utilizado para atribuir um padrão único, podendo ser usado para o reset da página. Possui menos peso na estilização, até menos que a tag.</p>
+    <p>Neste documento foi utilizado para atribuir o tamanho da fonte em 20px e cor inicial como <strong>darkslateblue</strong></p>
+    <h2>Seletor de Atributo</h2>
+    <p>Utiliza o atributo para seleção do estilo.</p>
+    <p>Declarado no arquivo CSS como [atributo]</p>
+    <p>Irá estilizar todas tags com o atributo selecionado.</p>
+    <p>É possivel alterar as formas de localizar as tags de várias formas.</p>
+    <ul>
+        <li title="Atributo">
+            <p class="seletor-atributo">[atributo]</p>
+            <p>Irá localizar um atributo e estilizar todas tags com este atributo.</p>
+        </li>
+        <li title="Item-lista">
+            <p class="seletor-atributo">[atributo="valor-registrado-dentro-do-atributo"]</p>
+            <p>Irá localizar um atributo que tenha o valor especifico mencionado.</p>
+        </li>
+        <li title="Parcial Item-lista">
+            <p class="seletor-atributo">[atributo~="valor-parcial-registrado-dentro-do-atributo"] </p>
+            <p>Irá localizar um atributo que tenha o valor mencionado separado por espaço no atributo, independente da posição do valor.</p>
+        </li>
+        <li title="Item-lista Parcial">
+            <p class="seletor-atributo">[atributo~="valor-parcial-registrado-dentro-do-atributo"] </p>
+            <p> Irá localizar um atributo que tenha o valor mencionado separado por espaço no atributo, independente da posição do valor.</p>
+        </li>
+        <li title="Pipe">
+            <p class="seletor-atributo">[atributo|="valor-registrado-dentro-do-atributo"] </p>
+            <p>Irá localizar o valor exato mencionado ou o valor seguido por um hífen.</p>
+        </li>
+        <li title="Pipe-Item-lista">
+            <p class="seletor-atributo">[atributo|="valor-registrado-dentro-do-atributo"] </p>
+            <p>Irá localizar o valor exato mencionado ou o valor seguido por um hífen.</p>
+        </li>
+        <li title="PrefixoPode://TerQualquerValor">
+            <p class="seletor-atributo">[atributo^="prefixo-que-deseja-verificar-registrado-dentro-do-atributo"]</p>
+            <p> Irá localizar um atributo que tenha o prefixo com o valor mencionado.</p>
+        </li>
+        <li title="PodeSeSelecionarQualquer#isuaSufixo">
+            <p class="seletor-atributo">[atributo$="sufixo-que-deseja-verificar-registrado-dentro-do-atributo"]</p>
+            <p> Irá localizar um atributo que tenha o sufixo com o valor mencionado.</p>
+        </li>
+        <li title="NãoImportaAPosicaodoValorOAsteriscoIráLocalizar">
+            <p class="seletor-atributo">[atributo*="valor-registrado-dentro-do-atributo"]</p>
+            <p> Irá localizar um atributo que tenha o valor especifico mencionado, este valor mencionado pode estar registrado em qualquer parte do valor.</p>
+        </li>
+    </ul>
+
+
+
+</body>
+
+</html>
